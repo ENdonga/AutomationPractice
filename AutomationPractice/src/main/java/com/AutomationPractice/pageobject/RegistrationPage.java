@@ -338,4 +338,67 @@ public class RegistrationPage {
 	public boolean verifyRegisterPageSuccess() {
 		return new VerificationHelper(driver).isDisplayed(yourPersonalInformation);
 	}
+	
+	public void registerUserWithTestData(String firstname, String lastname, String password, String address1, String city, String zipcode, String country, String phone) {
+		clearTextFieldBeforeTyping(customerFirstName);
+		log.info("Entering email address ..... " + firstname);
+		TestBase.logExtentReport("Entering email address..... " + firstname);
+		customerFirstName.sendKeys(firstname);
+		clearTextFieldBeforeTyping(customerLastName);
+		log.info("Entering email address ..... " + lastname);
+		TestBase.logExtentReport("Entering email address..... " + lastname);
+		customerLastName.sendKeys(lastname);
+		clearTextFieldBeforeTyping(customerPassword);
+		log.info("Entering email address ..... " + password);
+		TestBase.logExtentReport("Entering email address..... " + password);
+		customerPassword.sendKeys(password);
+		clearTextFieldBeforeTyping(address);
+		address.sendKeys(address1);
+		log.info("Entered address line 1 as: " + address1);
+		TestBase.logExtentReport("Entered address line 1 as: " + address1);
+		clearTextFieldBeforeTyping(yourAddressCity);
+		yourAddressCity.sendKeys(city);
+		log.info("Entered city name as: " + city);
+		TestBase.logExtentReport("Entered city name as: " + city);
+		clearTextFieldBeforeTyping(yourAddressPostalCode);
+		yourAddressPostalCode.sendKeys(zipcode);
+		log.info("Entered zip/postal code: " + zipcode);
+		TestBase.logExtentReport("Entered zip/postal code: " + zipcode);
+		new DropDownHelper(driver).selectUsingVisibleText(yourAddressCountry, country);
+		String selectedCountry = new DropDownHelper(driver).getSelectedOption(yourAddressCountry);
+		log.info("Selected country option as.... " + selectedCountry);
+		TestBase.logExtentReport("Selected country option as.... " + selectedCountry);
+		clearTextFieldBeforeTyping(mobilePhoneNumber);
+		mobilePhoneNumber.sendKeys(phone);
+		log.info("Entered mobile phone number: " + phone);
+		TestBase.logExtentReport("Entered mobile phone number: " + phone);
+		//registerButton.click();
+	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

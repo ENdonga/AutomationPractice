@@ -39,6 +39,9 @@ public class ExcelHelper {
 				i++;
 				// For each row, iterate through each column
 				Row row = (Row) rowIterator.next();
+				if(row.getRowNum()==0) {
+					continue;
+				}
 				Iterator<Cell> cellIterator = row.cellIterator();
 				int j = 0;
 				while (cellIterator.hasNext()) {
