@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="All Test">
+	<test name="LoginTest">
+		<classes>
+			<class
+				name="com.AutomationPractice.testscripts.loginpage.LoginTest"></class>
+		</classes>
+	</test>
+	<test name="RegistrationPageTest">
+		<classes>
+			<class
+				name="com.AutomationPractice.testscripts.registrationpage.RegistrationPageTest"></class>
+		</classes>
+	</test>
+	<test name="ProductCategoryPageTest">
+		<classes>
+			<class
+				name="com.AutomationPractice.testscripts.productcategorypage.ProductCategoryPageTest"></class>
+		</classes>
+	</test>
+	<test name="ShoppingCartSummaryPageTest">
+		<classes>
+			<class
+				name="com.AutomationPractice.testscripts.shoppingcartpage.ShoppingCartSummaryPageTest"></class>
+		</classes>
+	</test>
+</suite>

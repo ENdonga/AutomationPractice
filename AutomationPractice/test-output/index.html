@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-All_Test">
+              <span class="suite-name border-passed">All Test</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-All_Test">
+                    <span>AllTest.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-All_Test">
+                    <span class="test-stats">4 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-All_Test">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-All_Test">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-All_Test">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-All_Test">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-All_Test">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">19 methods,   19 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-All_Test" class="hide-methods passed suite-All_Test"> (hide)</a> <!-- hide-methods passed suite-All_Test -->
+                      <a href="#" panel-name="suite-All_Test" class="show-methods passed suite-All_Test"> (show)</a> <!-- show-methods passed suite-All_Test -->
+                    </span>
+                    <div class="method-list-content passed suite-All_Test">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test" title="com.AutomationPractice.testscripts.productcategorypage.ProductCategoryPageTest" hash-for-method="addItemsToCartTest">addItemsToCartTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test" title="com.AutomationPractice.testscripts.shoppingcartpage.ShoppingCartSummaryPageTest" hash-for-method="testCheckout">testCheckout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test" title="com.AutomationPractice.testscripts.registrationpage.RegistrationPageTest" hash-for-method="testCreateAccount">testCreateAccount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test" title="com.AutomationPractice.testscripts.loginpage.LoginTest" hash-for-method="testLoginToApplication">testLoginToApplication</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test" title="com.AutomationPractice.testscripts.shoppingcartpage.ShoppingCartSummaryPageTest" hash-for-method="testLoginToShoppingCartSummary">testLoginToShoppingCartSummary</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test" title="com.AutomationPractice.testscripts.loginpage.LoginTest" hash-for-method="testLoginWithDataSet(admin, wsad)">testLoginWithDataSet(admin, wsad)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test" title="com.AutomationPractice.testscripts.loginpage.LoginTest" hash-for-method="testLoginWithDataSet(jnqwwjndewjd@test.com, passw)">testLoginWithDataSet(jnqwwjndewjd@test.com, passw)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test" title="com.AutomationPractice.testscripts.loginpage.LoginTest" hash-for-method="testLoginWithDataSet(jnqwwjndewjd@test, password)">testLoginWithDataSet(jnqwwjndewjd@test, password)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test" title="com.AutomationPractice.testscripts.loginpage.LoginTest" hash-for-method="testLoginWithDataSet(jnqwwjndewjd@test.com, passwo)">testLoginWithDataSet(jnqwwjndewjd@test.com, passwo)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test" title="com.AutomationPractice.testscripts.loginpage.LoginTest" hash-for-method="testLoginWithDataSet(batman, password)">testLoginWithDataSet(batman, password)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test" title="com.AutomationPractice.testscripts.loginpage.LoginTest" hash-for-method="testLoginWithInvalidCredentials(jnqwwjndewjd@test.com, passw)">testLoginWithInvalidCredentials(jnqwwjndewjd@test.com, passw)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test" title="com.AutomationPractice.testscripts.loginpage.LoginTest" hash-for-method="testLoginWithInvalidCredentials(jnqwwjndewjd@test, password)">testLoginWithInvalidCredentials(jnqwwjndewjd@test, password)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test" title="com.AutomationPractice.testscripts.loginpage.LoginTest" hash-for-method="testLoginWithInvalidCredentials(jnqwwjndewjd@test.com, passwo)">testLoginWithInvalidCredentials(jnqwwjndewjd@test.com, passwo)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test" title="com.AutomationPractice.testscripts.loginpage.LoginTest" hash-for-method="testLoginWithInvalidCredentials(batman, password)">testLoginWithInvalidCredentials(batman, password)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test" title="com.AutomationPractice.testscripts.loginpage.LoginTest" hash-for-method="testLoginWithInvalidCredentials(admin, wsad)">testLoginWithInvalidCredentials(admin, wsad)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test" title="com.AutomationPractice.testscripts.productcategorypage.ProductCategoryPageTest" hash-for-method="testProductsHaveBeenAddedToCart">testProductsHaveBeenAddedToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test" title="com.AutomationPractice.testscripts.registrationpage.RegistrationPageTest" hash-for-method="testRegisterUser">testRegisterUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test" title="com.AutomationPractice.testscripts.productcategorypage.ProductCategoryPageTest" hash-for-method="verifyProductPageTitleTest">verifyProductPageTitleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test" title="com.AutomationPractice.testscripts.shoppingcartpage.ShoppingCartSummaryPageTest" hash-for-method="verifyShoppingCartSummaryPageTitle">verifyShoppingCartSummaryPageTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-All_Test -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-All_Test" class="panel All_Test">
+          <div class="suite-All_Test-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.AutomationPractice.testscripts.registrationpage.RegistrationPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCreateAccount">
+                  </a> <!-- testCreateAccount -->
+                  <span class="method-name">testCreateAccount</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRegisterUser">
+                  </a> <!-- testRegisterUser -->
+                  <span class="method-name">testRegisterUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test-class-passed -->
+          <div class="suite-All_Test-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.AutomationPractice.testscripts.productcategorypage.ProductCategoryPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addItemsToCartTest">
+                  </a> <!-- addItemsToCartTest -->
+                  <span class="method-name">addItemsToCartTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testProductsHaveBeenAddedToCart">
+                  </a> <!-- testProductsHaveBeenAddedToCart -->
+                  <span class="method-name">testProductsHaveBeenAddedToCart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProductPageTitleTest">
+                  </a> <!-- verifyProductPageTitleTest -->
+                  <span class="method-name">verifyProductPageTitleTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test-class-passed -->
+          <div class="suite-All_Test-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.AutomationPractice.testscripts.loginpage.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginToApplication">
+                  </a> <!-- testLoginToApplication -->
+                  <span class="method-name">testLoginToApplication</span>
+                  <em>
+(Login Test with valid credentials)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginWithDataSet(admin, wsad)">
+                  </a> <!-- testLoginWithDataSet(admin, wsad) -->
+                  <span class="method-name">testLoginWithDataSet</span>
+                  <span class="parameters">(admin, wsad)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginWithDataSet(jnqwwjndewjd@test.com, passw)">
+                  </a> <!-- testLoginWithDataSet(jnqwwjndewjd@test.com, passw) -->
+                  <span class="method-name">testLoginWithDataSet</span>
+                  <span class="parameters">(jnqwwjndewjd@test.com, passw)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginWithDataSet(jnqwwjndewjd@test, password)">
+                  </a> <!-- testLoginWithDataSet(jnqwwjndewjd@test, password) -->
+                  <span class="method-name">testLoginWithDataSet</span>
+                  <span class="parameters">(jnqwwjndewjd@test, password)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginWithDataSet(jnqwwjndewjd@test.com, passwo)">
+                  </a> <!-- testLoginWithDataSet(jnqwwjndewjd@test.com, passwo) -->
+                  <span class="method-name">testLoginWithDataSet</span>
+                  <span class="parameters">(jnqwwjndewjd@test.com, passwo)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginWithDataSet(batman, password)">
+                  </a> <!-- testLoginWithDataSet(batman, password) -->
+                  <span class="method-name">testLoginWithDataSet</span>
+                  <span class="parameters">(batman, password)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginWithInvalidCredentials(jnqwwjndewjd@test.com, passw)">
+                  </a> <!-- testLoginWithInvalidCredentials(jnqwwjndewjd@test.com, passw) -->
+                  <span class="method-name">testLoginWithInvalidCredentials</span>
+                  <span class="parameters">(jnqwwjndewjd@test.com, passw)</span>
+                  <em>
+(Login test with invalid credentials)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginWithInvalidCredentials(jnqwwjndewjd@test, password)">
+                  </a> <!-- testLoginWithInvalidCredentials(jnqwwjndewjd@test, password) -->
+                  <span class="method-name">testLoginWithInvalidCredentials</span>
+                  <span class="parameters">(jnqwwjndewjd@test, password)</span>
+                  <em>
+(Login test with invalid credentials)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginWithInvalidCredentials(jnqwwjndewjd@test.com, passwo)">
+                  </a> <!-- testLoginWithInvalidCredentials(jnqwwjndewjd@test.com, passwo) -->
+                  <span class="method-name">testLoginWithInvalidCredentials</span>
+                  <span class="parameters">(jnqwwjndewjd@test.com, passwo)</span>
+                  <em>
+(Login test with invalid credentials)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginWithInvalidCredentials(batman, password)">
+                  </a> <!-- testLoginWithInvalidCredentials(batman, password) -->
+                  <span class="method-name">testLoginWithInvalidCredentials</span>
+                  <span class="parameters">(batman, password)</span>
+                  <em>
+(Login test with invalid credentials)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginWithInvalidCredentials(admin, wsad)">
+                  </a> <!-- testLoginWithInvalidCredentials(admin, wsad) -->
+                  <span class="method-name">testLoginWithInvalidCredentials</span>
+                  <span class="parameters">(admin, wsad)</span>
+                  <em>
+(Login test with invalid credentials)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test-class-passed -->
+          <div class="suite-All_Test-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.AutomationPractice.testscripts.shoppingcartpage.ShoppingCartSummaryPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCheckout">
+                  </a> <!-- testCheckout -->
+                  <span class="method-name">testCheckout</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginToShoppingCartSummary">
+                  </a> <!-- testLoginToShoppingCartSummary -->
+                  <span class="method-name">testLoginToShoppingCartSummary</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyShoppingCartSummaryPageTitle">
+                  </a> <!-- verifyShoppingCartSummaryPageTitle -->
+                  <span class="method-name">verifyShoppingCartSummaryPageTitle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test-class-passed -->
+        </div> <!-- panel All_Test -->
+        <div panel-name="test-xml-All_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/home/edwinndonga/eclipse-workspace/AutomationPractice/src/main/resources/testsuite/AllTest.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;All Test&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;LoginTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.AutomationPractice.testscripts.loginpage.LoginTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- LoginTest --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;RegistrationPageTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.AutomationPractice.testscripts.registrationpage.RegistrationPageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- RegistrationPageTest --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;ProductCategoryPageTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.AutomationPractice.testscripts.productcategorypage.ProductCategoryPageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ProductCategoryPageTest --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;ShoppingCartSummaryPageTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.AutomationPractice.testscripts.shoppingcartpage.ShoppingCartSummaryPageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ShoppingCartSummaryPageTest --&gt;
+&lt;/suite&gt; &lt;!-- All Test --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-All_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for All Test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">LoginTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">RegistrationPageTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">ProductCategoryPageTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">ShoppingCartSummaryPageTest (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-All_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for All Test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-All_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for All Test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_All_Test');
+function tableData_All_Test() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(19);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testCheckout')
+data.setCell(0, 2, 'com.AutomationPractice.testscripts.shoppingcartpage.ShoppingCartSummaryPageTest')
+data.setCell(0, 3, 25594);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testRegisterUser')
+data.setCell(1, 2, 'com.AutomationPractice.testscripts.registrationpage.RegistrationPageTest')
+data.setCell(1, 3, 14940);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyShoppingCartSummaryPageTitle')
+data.setCell(2, 2, 'com.AutomationPractice.testscripts.shoppingcartpage.ShoppingCartSummaryPageTest')
+data.setCell(2, 3, 14903);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testLoginWithInvalidCredentials')
+data.setCell(3, 2, 'com.AutomationPractice.testscripts.loginpage.LoginTest')
+data.setCell(3, 3, 13136);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testCreateAccount')
+data.setCell(4, 2, 'com.AutomationPractice.testscripts.registrationpage.RegistrationPageTest')
+data.setCell(4, 3, 12994);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyProductPageTitleTest')
+data.setCell(5, 2, 'com.AutomationPractice.testscripts.productcategorypage.ProductCategoryPageTest')
+data.setCell(5, 3, 11782);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testLoginToShoppingCartSummary')
+data.setCell(6, 2, 'com.AutomationPractice.testscripts.shoppingcartpage.ShoppingCartSummaryPageTest')
+data.setCell(6, 3, 11158);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testLoginToApplication')
+data.setCell(7, 2, 'com.AutomationPractice.testscripts.loginpage.LoginTest')
+data.setCell(7, 3, 10534);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testProductsHaveBeenAddedToCart')
+data.setCell(8, 2, 'com.AutomationPractice.testscripts.productcategorypage.ProductCategoryPageTest')
+data.setCell(8, 3, 9512);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testLoginWithInvalidCredentials')
+data.setCell(9, 2, 'com.AutomationPractice.testscripts.loginpage.LoginTest')
+data.setCell(9, 3, 9289);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testLoginWithDataSet')
+data.setCell(10, 2, 'com.AutomationPractice.testscripts.loginpage.LoginTest')
+data.setCell(10, 3, 8630);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testLoginWithInvalidCredentials')
+data.setCell(11, 2, 'com.AutomationPractice.testscripts.loginpage.LoginTest')
+data.setCell(11, 3, 8422);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testLoginWithInvalidCredentials')
+data.setCell(12, 2, 'com.AutomationPractice.testscripts.loginpage.LoginTest')
+data.setCell(12, 3, 8113);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testLoginWithDataSet')
+data.setCell(13, 2, 'com.AutomationPractice.testscripts.loginpage.LoginTest')
+data.setCell(13, 3, 7867);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testLoginWithDataSet')
+data.setCell(14, 2, 'com.AutomationPractice.testscripts.loginpage.LoginTest')
+data.setCell(14, 3, 7225);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testLoginWithDataSet')
+data.setCell(15, 2, 'com.AutomationPractice.testscripts.loginpage.LoginTest')
+data.setCell(15, 3, 7004);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testLoginWithDataSet')
+data.setCell(16, 2, 'com.AutomationPractice.testscripts.loginpage.LoginTest')
+data.setCell(16, 3, 6753);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testLoginWithInvalidCredentials')
+data.setCell(17, 2, 'com.AutomationPractice.testscripts.loginpage.LoginTest')
+data.setCell(17, 3, 6737);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'addItemsToCartTest')
+data.setCell(18, 2, 'com.AutomationPractice.testscripts.productcategorypage.ProductCategoryPageTest')
+data.setCell(18, 3, 6603);
+window.suiteTableData['All_Test']= { tableData: data, tableDiv: 'times-div-All_Test'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <div id="times-div-All_Test">
+              </div> <!-- times-div-All_Test -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-All_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for All Test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-All_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-All_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.AutomationPractice.testscripts.shoppingcartpage.ShoppingCartSummaryPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">beforeSuite</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.AutomationPractice.testscripts.loginpage.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest</span>
+                <span class="method-start">135 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">1310 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.AutomationPractice.testscripts.loginpage.LoginTest.testLoginWithInvalidCredentials(j...)</span>
+                <span class="method-start">1780 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLoginWithInvalidCredentials(batman, password)</span>
+                <span class="method-start">1785 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testLoginWithInvalidCredentials status=SUCCESS method=LoginTest.testLoginWithInvali...)</span>
+                <span class="method-start">14923 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.AutomationPractice.testscripts.loginpage.LoginTest.testLoginWithInvalidCredentials(j...)</span>
+                <span class="method-start">15104 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLoginWithInvalidCredentials(admin, wsad)</span>
+                <span class="method-start">15104 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testLoginWithInvalidCredentials status=SUCCESS method=LoginTest.testLoginWithInvali...)</span>
+                <span class="method-start">23218 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.AutomationPractice.testscripts.loginpage.LoginTest.testLoginWithInvalidCredentials(j...)</span>
+                <span class="method-start">23266 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLoginWithInvalidCredentials(jnqwwjndewjd@test.com, passw)</span>
+                <span class="method-start">23266 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testLoginWithInvalidCredentials status=SUCCESS method=LoginTest.testLoginWithInvali...)</span>
+                <span class="method-start">32556 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.AutomationPractice.testscripts.loginpage.LoginTest.testLoginWithInvalidCredentials(j...)</span>
+                <span class="method-start">32590 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLoginWithInvalidCredentials(jnqwwjndewjd@test.com, passwo)</span>
+                <span class="method-start">32590 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testLoginWithInvalidCredentials status=SUCCESS method=LoginTest.testLoginWithInvali...)</span>
+                <span class="method-start">39328 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.AutomationPractice.testscripts.loginpage.LoginTest.testLoginWithInvalidCredentials(j...)</span>
+                <span class="method-start">39365 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLoginWithInvalidCredentials(jnqwwjndewjd@test, password)</span>
+                <span class="method-start">39366 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testLoginWithInvalidCredentials status=SUCCESS method=LoginTest.testLoginWithInvali...)</span>
+                <span class="method-start">47789 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.AutomationPractice.testscripts.loginpage.LoginTest.testLoginWithDataSet(java.lang.St...)</span>
+                <span class="method-start">47845 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLoginWithDataSet(batman, password)</span>
+                <span class="method-start">47845 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testLoginWithDataSet status=SUCCESS method=LoginTest.testLoginWithDataSet(java.lang...)</span>
+                <span class="method-start">54851 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.AutomationPractice.testscripts.loginpage.LoginTest.testLoginWithDataSet(java.lang.St...)</span>
+                <span class="method-start">54889 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLoginWithDataSet(admin, wsad)</span>
+                <span class="method-start">54889 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testLoginWithDataSet status=SUCCESS method=LoginTest.testLoginWithDataSet(java.lang...)</span>
+                <span class="method-start">63520 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.AutomationPractice.testscripts.loginpage.LoginTest.testLoginWithDataSet(java.lang.St...)</span>
+                <span class="method-start">63551 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLoginWithDataSet(jnqwwjndewjd@test.com, passw)</span>
+                <span class="method-start">63552 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testLoginWithDataSet status=SUCCESS method=LoginTest.testLoginWithDataSet(java.lang...)</span>
+                <span class="method-start">70305 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.AutomationPractice.testscripts.loginpage.LoginTest.testLoginWithDataSet(java.lang.St...)</span>
+                <span class="method-start">70344 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLoginWithDataSet(jnqwwjndewjd@test.com, passwo)</span>
+                <span class="method-start">70344 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testLoginWithDataSet status=SUCCESS method=LoginTest.testLoginWithDataSet(java.lang...)</span>
+                <span class="method-start">77570 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.AutomationPractice.testscripts.loginpage.LoginTest.testLoginWithDataSet(java.lang.St...)</span>
+                <span class="method-start">77599 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLoginWithDataSet(jnqwwjndewjd@test, password)</span>
+                <span class="method-start">77600 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testLoginWithDataSet status=SUCCESS method=LoginTest.testLoginWithDataSet(java.lang...)</span>
+                <span class="method-start">85468 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.AutomationPractice.testscripts.loginpage.LoginTest.testLoginToApplication())</span>
+                <span class="method-start">85497 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLoginToApplication</span>
+                <span class="method-start">85497 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testLoginToApplication status=SUCCESS method=LoginTest.testLoginToApplication()[pri...)</span>
+                <span class="method-start">96032 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">96058 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.AutomationPractice.testscripts.registrationpage.RegistrationPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest</span>
+                <span class="method-start">96146 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">96772 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.AutomationPractice.testscripts.registrationpage.RegistrationPageTest.testCreateAccou...)</span>
+                <span class="method-start">96773 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testCreateAccount</span>
+                <span class="method-start">96773 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testCreateAccount status=SUCCESS method=RegistrationPageTest.testCreateAccount()[pr...)</span>
+                <span class="method-start">109769 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.AutomationPractice.testscripts.registrationpage.RegistrationPageTest.testRegisterUse...)</span>
+                <span class="method-start">109863 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testRegisterUser</span>
+                <span class="method-start">109863 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testRegisterUser status=SUCCESS method=RegistrationPageTest.testRegisterUser()[pri:...)</span>
+                <span class="method-start">124803 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">124832 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.AutomationPractice.testscripts.productcategorypage.ProductCategoryPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest</span>
+                <span class="method-start">124958 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">125696 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.AutomationPractice.testscripts.productcategorypage.ProductCategoryPageTest.verifyPro...)</span>
+                <span class="method-start">125696 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyProductPageTitleTest</span>
+                <span class="method-start">125696 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyProductPageTitleTest status=SUCCESS method=ProductCategoryPageTest.verifyProd...)</span>
+                <span class="method-start">137478 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.AutomationPractice.testscripts.productcategorypage.ProductCategoryPageTest.addItemsT...)</span>
+                <span class="method-start">137505 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addItemsToCartTest</span>
+                <span class="method-start">137505 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=addItemsToCartTest status=SUCCESS method=ProductCategoryPageTest.addItemsToCartTest...)</span>
+                <span class="method-start">144109 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.AutomationPractice.testscripts.productcategorypage.ProductCategoryPageTest.testProdu...)</span>
+                <span class="method-start">144136 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testProductsHaveBeenAddedToCart</span>
+                <span class="method-start">144136 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testProductsHaveBeenAddedToCart status=SUCCESS method=ProductCategoryPageTest.testP...)</span>
+                <span class="method-start">153649 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">153697 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.AutomationPractice.testscripts.shoppingcartpage.ShoppingCartSummaryPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest</span>
+                <span class="method-start">153769 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">154393 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.AutomationPractice.testscripts.shoppingcartpage.ShoppingCartSummaryPageTest.verifySh...)</span>
+                <span class="method-start">154394 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyShoppingCartSummaryPageTitle</span>
+                <span class="method-start">154394 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyShoppingCartSummaryPageTitle status=SUCCESS method=ShoppingCartSummaryPageTes...)</span>
+                <span class="method-start">169299 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.AutomationPractice.testscripts.shoppingcartpage.ShoppingCartSummaryPageTest.testLogi...)</span>
+                <span class="method-start">169337 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLoginToShoppingCartSummary</span>
+                <span class="method-start">169337 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testLoginToShoppingCartSummary status=SUCCESS method=ShoppingCartSummaryPageTest.te...)</span>
+                <span class="method-start">180496 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.AutomationPractice.testscripts.shoppingcartpage.ShoppingCartSummaryPageTest.testChec...)</span>
+                <span class="method-start">180527 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testCheckout</span>
+                <span class="method-start">180527 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testCheckout status=SUCCESS method=ShoppingCartSummaryPageTest.testCheckout()[pri:3...)</span>
+                <span class="method-start">206122 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">206148 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
