@@ -3,17 +3,17 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.AutomationPractice.testscripts.registrationpage.RegistrationPageTest">
+      <class name="com.AutomationPractice.testscripts.searchpage.SearchPageTest">
         <methods>
+          <include name="testEnterSearchTextAndClickEnter"/>
           <include name="beforeClass"/>
           <include name="beforeTest"/>
           <include name="afterMethod"/>
           <include name="beforeMethod"/>
           <include name="afterTest"/>
-          <include name="testRegisterUser"/>
           <include name="beforeSuite"/>
         </methods>
-      </class> <!-- com.AutomationPractice.testscripts.registrationpage.RegistrationPageTest -->
+      </class> <!-- com.AutomationPractice.testscripts.searchpage.SearchPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

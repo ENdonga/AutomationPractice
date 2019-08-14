@@ -26,4 +26,10 @@
 				name="com.AutomationPractice.testscripts.shoppingcartpage.ShoppingCartSummaryPageTest"></class>
 		</classes>
 	</test>
+	<test name="SearchPageTest">
+		<classes>
+			<class
+				name="com.AutomationPractice.testscripts.searchpage.SearchPageTest"></class>
+		</classes>
+	</test>
 </suite>

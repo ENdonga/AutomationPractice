@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="19" passed="19">
+<testng-results skipped="0" failed="0" ignored="0" total="21" passed="21">
   <reporter-output>
   </reporter-output>
-  <suite name="All Test" duration-ms="206088" started-at="2019-08-14T18:00:42Z" finished-at="2019-08-14T18:04:08Z">
+  <suite name="All Test" duration-ms="251304" started-at="2019-08-14T21:26:51Z" finished-at="2019-08-14T21:31:02Z">
     <groups>
     </groups>
-    <test name="LoginTest" duration-ms="96002" started-at="2019-08-14T18:00:42Z" finished-at="2019-08-14T18:02:18Z">
+    <test name="LoginTest" duration-ms="103685" started-at="2019-08-14T21:26:51Z" finished-at="2019-08-14T21:28:35Z">
       <class name="com.AutomationPractice.testscripts.loginpage.LoginTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="beforeTest" is-config="true" duration-ms="1167" started-at="2019-08-14T18:00:42Z" finished-at="2019-08-14T18:00:43Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="beforeTest" is-config="true" duration-ms="1093" started-at="2019-08-14T21:26:51Z" finished-at="2019-08-14T21:26:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="beforeClass" is-config="true" duration-ms="3" started-at="2019-08-14T18:00:43Z" finished-at="2019-08-14T18:00:43Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="beforeClass" is-config="true" duration-ms="3" started-at="2019-08-14T21:26:52Z" finished-at="2019-08-14T21:26:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="beforeMethod" is-config="true" duration-ms="5" started-at="2019-08-14T18:00:44Z" finished-at="2019-08-14T18:00:44Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="beforeMethod" is-config="true" duration-ms="4" started-at="2019-08-14T21:26:53Z" finished-at="2019-08-14T21:26:53Z">
           <params>
             <param index="0">
               <value>
@@ -26,7 +26,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testLoginWithInvalidCredentials(java.lang.String, java.lang.String)[pri:1, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="testLoginWithInvalidCredentials" duration-ms="13136" started-at="2019-08-14T18:00:44Z" description="Login test with invalid credentials" data-provider="getLoginData" finished-at="2019-08-14T18:00:57Z">
+        <test-method status="PASS" signature="testLoginWithInvalidCredentials(java.lang.String, java.lang.String)[pri:1, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="testLoginWithInvalidCredentials" duration-ms="23957" started-at="2019-08-14T21:26:53Z" description="Login test with invalid credentials" data-provider="getLoginData" finished-at="2019-08-14T21:27:16Z">
           <params>
             <param index="0">
               <value>
@@ -42,7 +42,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginWithInvalidCredentials -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="afterMethod" is-config="true" duration-ms="181" started-at="2019-08-14T18:00:57Z" finished-at="2019-08-14T18:00:57Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="afterMethod" is-config="true" duration-ms="195" started-at="2019-08-14T21:27:16Z" finished-at="2019-08-14T21:27:17Z">
           <params>
             <param index="0">
               <value>
@@ -53,7 +53,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-08-14T18:00:57Z" finished-at="2019-08-14T18:00:57Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2019-08-14T21:27:17Z" finished-at="2019-08-14T21:27:17Z">
           <params>
             <param index="0">
               <value>
@@ -64,7 +64,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testLoginWithInvalidCredentials(java.lang.String, java.lang.String)[pri:1, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="testLoginWithInvalidCredentials" duration-ms="8113" started-at="2019-08-14T18:00:57Z" description="Login test with invalid credentials" data-provider="getLoginData" finished-at="2019-08-14T18:01:05Z">
+        <test-method status="PASS" signature="testLoginWithInvalidCredentials(java.lang.String, java.lang.String)[pri:1, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="testLoginWithInvalidCredentials" duration-ms="7190" started-at="2019-08-14T21:27:17Z" description="Login test with invalid credentials" data-provider="getLoginData" finished-at="2019-08-14T21:27:24Z">
           <params>
             <param index="0">
               <value>
@@ -80,7 +80,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginWithInvalidCredentials -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="afterMethod" is-config="true" duration-ms="47" started-at="2019-08-14T18:01:05Z" finished-at="2019-08-14T18:01:05Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="afterMethod" is-config="true" duration-ms="56" started-at="2019-08-14T21:27:24Z" finished-at="2019-08-14T21:27:24Z">
           <params>
             <param index="0">
               <value>
@@ -91,18 +91,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-08-14T18:01:05Z" finished-at="2019-08-14T18:01:05Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.AutomationPractice.testscripts.loginpage.LoginTest.testLoginWithInvalidCredentials(java.lang.String,java.lang.String)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testLoginWithInvalidCredentials(java.lang.String, java.lang.String)[pri:1, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="testLoginWithInvalidCredentials" duration-ms="9289" started-at="2019-08-14T18:01:05Z" description="Login test with invalid credentials" data-provider="getLoginData" finished-at="2019-08-14T18:01:15Z">
+        <test-method status="PASS" signature="testLoginWithInvalidCredentials(java.lang.String, java.lang.String)[pri:1, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="testLoginWithInvalidCredentials" duration-ms="7520" started-at="2019-08-14T21:27:24Z" description="Login test with invalid credentials" data-provider="getLoginData" finished-at="2019-08-14T21:27:31Z">
           <params>
             <param index="0">
               <value>
@@ -118,18 +107,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginWithInvalidCredentials -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="afterMethod" is-config="true" duration-ms="34" started-at="2019-08-14T18:01:15Z" finished-at="2019-08-14T18:01:15Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testLoginWithInvalidCredentials status=SUCCESS method=LoginTest.testLoginWithInvalidCredentials(java.lang.String, java.lang.String)[pri:1, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-08-14T18:01:15Z" finished-at="2019-08-14T18:01:15Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-08-14T21:27:24Z" finished-at="2019-08-14T21:27:24Z">
           <params>
             <param index="0">
               <value>
@@ -140,7 +118,29 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testLoginWithInvalidCredentials(java.lang.String, java.lang.String)[pri:1, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="testLoginWithInvalidCredentials" duration-ms="6737" started-at="2019-08-14T18:01:15Z" description="Login test with invalid credentials" data-provider="getLoginData" finished-at="2019-08-14T18:01:21Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="afterMethod" is-config="true" duration-ms="35" started-at="2019-08-14T21:27:31Z" finished-at="2019-08-14T21:27:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLoginWithInvalidCredentials status=SUCCESS method=LoginTest.testLoginWithInvalidCredentials(java.lang.String, java.lang.String)[pri:1, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2019-08-14T21:27:31Z" finished-at="2019-08-14T21:27:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.AutomationPractice.testscripts.loginpage.LoginTest.testLoginWithInvalidCredentials(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testLoginWithInvalidCredentials(java.lang.String, java.lang.String)[pri:1, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="testLoginWithInvalidCredentials" duration-ms="6546" started-at="2019-08-14T21:27:31Z" description="Login test with invalid credentials" data-provider="getLoginData" finished-at="2019-08-14T21:27:38Z">
           <params>
             <param index="0">
               <value>
@@ -156,7 +156,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginWithInvalidCredentials -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="afterMethod" is-config="true" duration-ms="37" started-at="2019-08-14T18:01:21Z" finished-at="2019-08-14T18:01:21Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="afterMethod" is-config="true" duration-ms="29" started-at="2019-08-14T21:27:38Z" finished-at="2019-08-14T21:27:38Z">
           <params>
             <param index="0">
               <value>
@@ -167,7 +167,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-08-14T18:01:21Z" finished-at="2019-08-14T18:01:21Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-08-14T21:27:38Z" finished-at="2019-08-14T21:27:38Z">
           <params>
             <param index="0">
               <value>
@@ -178,7 +178,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testLoginWithInvalidCredentials(java.lang.String, java.lang.String)[pri:1, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="testLoginWithInvalidCredentials" duration-ms="8422" started-at="2019-08-14T18:01:21Z" description="Login test with invalid credentials" data-provider="getLoginData" finished-at="2019-08-14T18:01:30Z">
+        <test-method status="PASS" signature="testLoginWithInvalidCredentials(java.lang.String, java.lang.String)[pri:1, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="testLoginWithInvalidCredentials" duration-ms="6591" started-at="2019-08-14T21:27:38Z" description="Login test with invalid credentials" data-provider="getLoginData" finished-at="2019-08-14T21:27:45Z">
           <params>
             <param index="0">
               <value>
@@ -194,7 +194,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginWithInvalidCredentials -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="afterMethod" is-config="true" duration-ms="30" started-at="2019-08-14T18:01:30Z" finished-at="2019-08-14T18:01:30Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="afterMethod" is-config="true" duration-ms="30" started-at="2019-08-14T21:27:45Z" finished-at="2019-08-14T21:27:45Z">
           <params>
             <param index="0">
               <value>
@@ -205,7 +205,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="testLoginWithDataSet(java.lang.String, java.lang.String)[pri:2, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="testLoginWithDataSet" duration-ms="7004" started-at="2019-08-14T18:01:30Z" data-provider="getLoginData" finished-at="2019-08-14T18:01:37Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-08-14T21:27:45Z" finished-at="2019-08-14T21:27:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.AutomationPractice.testscripts.loginpage.LoginTest.testLoginWithDataSet(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testLoginWithDataSet(java.lang.String, java.lang.String)[pri:2, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="testLoginWithDataSet" duration-ms="7540" started-at="2019-08-14T21:27:45Z" data-provider="getLoginData" finished-at="2019-08-14T21:27:52Z">
           <params>
             <param index="0">
               <value>
@@ -221,18 +232,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginWithDataSet -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-08-14T18:01:30Z" finished-at="2019-08-14T18:01:30Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.AutomationPractice.testscripts.loginpage.LoginTest.testLoginWithDataSet(java.lang.String,java.lang.String)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="afterMethod" is-config="true" duration-ms="38" started-at="2019-08-14T18:01:37Z" finished-at="2019-08-14T18:01:37Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="afterMethod" is-config="true" duration-ms="27" started-at="2019-08-14T21:27:52Z" finished-at="2019-08-14T21:27:52Z">
           <params>
             <param index="0">
               <value>
@@ -243,7 +243,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-08-14T18:01:37Z" finished-at="2019-08-14T18:01:37Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2019-08-14T21:27:52Z" finished-at="2019-08-14T21:27:52Z">
           <params>
             <param index="0">
               <value>
@@ -254,7 +254,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testLoginWithDataSet(java.lang.String, java.lang.String)[pri:2, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="testLoginWithDataSet" duration-ms="8630" started-at="2019-08-14T18:01:37Z" data-provider="getLoginData" finished-at="2019-08-14T18:01:46Z">
+        <test-method status="PASS" signature="testLoginWithDataSet(java.lang.String, java.lang.String)[pri:2, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="testLoginWithDataSet" duration-ms="6235" started-at="2019-08-14T21:27:52Z" data-provider="getLoginData" finished-at="2019-08-14T21:27:59Z">
           <params>
             <param index="0">
               <value>
@@ -270,7 +270,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginWithDataSet -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="afterMethod" is-config="true" duration-ms="31" started-at="2019-08-14T18:01:46Z" finished-at="2019-08-14T18:01:46Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="afterMethod" is-config="true" duration-ms="27" started-at="2019-08-14T21:27:59Z" finished-at="2019-08-14T21:27:59Z">
           <params>
             <param index="0">
               <value>
@@ -281,7 +281,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-08-14T18:01:46Z" finished-at="2019-08-14T18:01:46Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2019-08-14T21:27:59Z" finished-at="2019-08-14T21:27:59Z">
           <params>
             <param index="0">
               <value>
@@ -292,7 +292,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testLoginWithDataSet(java.lang.String, java.lang.String)[pri:2, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="testLoginWithDataSet" duration-ms="6753" started-at="2019-08-14T18:01:46Z" data-provider="getLoginData" finished-at="2019-08-14T18:01:52Z">
+        <test-method status="PASS" signature="testLoginWithDataSet(java.lang.String, java.lang.String)[pri:2, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="testLoginWithDataSet" duration-ms="7982" started-at="2019-08-14T21:27:59Z" data-provider="getLoginData" finished-at="2019-08-14T21:28:07Z">
           <params>
             <param index="0">
               <value>
@@ -308,7 +308,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginWithDataSet -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="afterMethod" is-config="true" duration-ms="39" started-at="2019-08-14T18:01:52Z" finished-at="2019-08-14T18:01:52Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="afterMethod" is-config="true" duration-ms="46" started-at="2019-08-14T21:28:07Z" finished-at="2019-08-14T21:28:07Z">
           <params>
             <param index="0">
               <value>
@@ -319,7 +319,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="testLoginWithDataSet(java.lang.String, java.lang.String)[pri:2, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="testLoginWithDataSet" duration-ms="7225" started-at="2019-08-14T18:01:52Z" data-provider="getLoginData" finished-at="2019-08-14T18:02:00Z">
+        <test-method status="PASS" signature="testLoginWithDataSet(java.lang.String, java.lang.String)[pri:2, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="testLoginWithDataSet" duration-ms="8066" started-at="2019-08-14T21:28:07Z" data-provider="getLoginData" finished-at="2019-08-14T21:28:15Z">
           <params>
             <param index="0">
               <value>
@@ -335,7 +335,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginWithDataSet -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-08-14T18:01:52Z" finished-at="2019-08-14T18:01:52Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-08-14T21:28:07Z" finished-at="2019-08-14T21:28:07Z">
           <params>
             <param index="0">
               <value>
@@ -346,7 +346,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="afterMethod" is-config="true" duration-ms="29" started-at="2019-08-14T18:02:00Z" finished-at="2019-08-14T18:02:00Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="afterMethod" is-config="true" duration-ms="40" started-at="2019-08-14T21:28:15Z" finished-at="2019-08-14T21:28:15Z">
           <params>
             <param index="0">
               <value>
@@ -357,7 +357,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2019-08-14T18:02:00Z" finished-at="2019-08-14T18:02:00Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2019-08-14T21:28:15Z" finished-at="2019-08-14T21:28:15Z">
           <params>
             <param index="0">
               <value>
@@ -368,7 +368,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testLoginWithDataSet(java.lang.String, java.lang.String)[pri:2, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="testLoginWithDataSet" duration-ms="7867" started-at="2019-08-14T18:02:00Z" data-provider="getLoginData" finished-at="2019-08-14T18:02:07Z">
+        <test-method status="PASS" signature="testLoginWithDataSet(java.lang.String, java.lang.String)[pri:2, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="testLoginWithDataSet" duration-ms="7779" started-at="2019-08-14T21:28:15Z" data-provider="getLoginData" finished-at="2019-08-14T21:28:22Z">
           <params>
             <param index="0">
               <value>
@@ -384,7 +384,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginWithDataSet -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="afterMethod" is-config="true" duration-ms="28" started-at="2019-08-14T18:02:07Z" finished-at="2019-08-14T18:02:07Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="afterMethod" is-config="true" duration-ms="31" started-at="2019-08-14T21:28:22Z" finished-at="2019-08-14T21:28:23Z">
           <params>
             <param index="0">
               <value>
@@ -395,11 +395,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="testLoginToApplication()[pri:3, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="testLoginToApplication" duration-ms="10534" started-at="2019-08-14T18:02:07Z" description="Login Test with valid credentials" finished-at="2019-08-14T18:02:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLoginToApplication -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-08-14T18:02:07Z" finished-at="2019-08-14T18:02:07Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-08-14T21:28:23Z" finished-at="2019-08-14T21:28:23Z">
           <params>
             <param index="0">
               <value>
@@ -410,7 +406,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="afterMethod" is-config="true" duration-ms="26" started-at="2019-08-14T18:02:18Z" finished-at="2019-08-14T18:02:18Z">
+        <test-method status="PASS" signature="testLoginToApplication()[pri:3, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="testLoginToApplication" duration-ms="11977" started-at="2019-08-14T21:28:23Z" description="Login Test with valid credentials" finished-at="2019-08-14T21:28:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginToApplication -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="afterMethod" is-config="true" duration-ms="27" started-at="2019-08-14T21:28:34Z" finished-at="2019-08-14T21:28:35Z">
           <params>
             <param index="0">
               <value>
@@ -421,27 +421,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="afterTest" is-config="true" duration-ms="76" started-at="2019-08-14T18:02:18Z" finished-at="2019-08-14T18:02:18Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.AutomationPractice.testscripts.loginpage.LoginTest@4f970963]" name="afterTest" is-config="true" duration-ms="72" started-at="2019-08-14T21:28:35Z" finished-at="2019-08-14T21:28:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- com.AutomationPractice.testscripts.loginpage.LoginTest -->
     </test> <!-- LoginTest -->
-    <test name="RegistrationPageTest" duration-ms="28810" started-at="2019-08-14T18:02:18Z" finished-at="2019-08-14T18:02:47Z">
+    <test name="RegistrationPageTest" duration-ms="45593" started-at="2019-08-14T21:28:35Z" finished-at="2019-08-14T21:29:20Z">
       <class name="com.AutomationPractice.testscripts.registrationpage.RegistrationPageTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.AutomationPractice.testscripts.registrationpage.RegistrationPageTest@72b6cbcc]" name="beforeTest" is-config="true" duration-ms="626" started-at="2019-08-14T18:02:18Z" finished-at="2019-08-14T18:02:19Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.AutomationPractice.testscripts.registrationpage.RegistrationPageTest@72b6cbcc]" name="beforeTest" is-config="true" duration-ms="661" started-at="2019-08-14T21:28:35Z" finished-at="2019-08-14T21:28:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.AutomationPractice.testscripts.registrationpage.RegistrationPageTest@72b6cbcc]" name="beforeClass" is-config="true" duration-ms="0" started-at="2019-08-14T18:02:19Z" finished-at="2019-08-14T18:02:19Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.AutomationPractice.testscripts.registrationpage.RegistrationPageTest@72b6cbcc]" name="beforeClass" is-config="true" duration-ms="0" started-at="2019-08-14T21:28:35Z" finished-at="2019-08-14T21:28:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="testCreateAccount()[pri:1, instance:com.AutomationPractice.testscripts.registrationpage.RegistrationPageTest@72b6cbcc]" name="testCreateAccount" duration-ms="12994" started-at="2019-08-14T18:02:19Z" finished-at="2019-08-14T18:02:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCreateAccount -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.AutomationPractice.testscripts.registrationpage.RegistrationPageTest@72b6cbcc]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-08-14T18:02:19Z" finished-at="2019-08-14T18:02:19Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.AutomationPractice.testscripts.registrationpage.RegistrationPageTest@72b6cbcc]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2019-08-14T21:28:35Z" finished-at="2019-08-14T21:28:35Z">
           <params>
             <param index="0">
               <value>
@@ -452,7 +448,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.AutomationPractice.testscripts.registrationpage.RegistrationPageTest@72b6cbcc]" name="afterMethod" is-config="true" duration-ms="91" started-at="2019-08-14T18:02:32Z" finished-at="2019-08-14T18:02:32Z">
+        <test-method status="PASS" signature="testCreateAccount()[pri:1, instance:com.AutomationPractice.testscripts.registrationpage.RegistrationPageTest@72b6cbcc]" name="testCreateAccount" duration-ms="23496" started-at="2019-08-14T21:28:35Z" finished-at="2019-08-14T21:28:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateAccount -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.AutomationPractice.testscripts.registrationpage.RegistrationPageTest@72b6cbcc]" name="afterMethod" is-config="true" duration-ms="35" started-at="2019-08-14T21:28:59Z" finished-at="2019-08-14T21:28:59Z">
           <params>
             <param index="0">
               <value>
@@ -463,7 +463,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.AutomationPractice.testscripts.registrationpage.RegistrationPageTest@72b6cbcc]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-08-14T18:02:32Z" finished-at="2019-08-14T18:02:32Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.AutomationPractice.testscripts.registrationpage.RegistrationPageTest@72b6cbcc]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-08-14T21:28:59Z" finished-at="2019-08-14T21:28:59Z">
           <params>
             <param index="0">
               <value>
@@ -474,11 +474,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testRegisterUser()[pri:2, instance:com.AutomationPractice.testscripts.registrationpage.RegistrationPageTest@72b6cbcc]" name="testRegisterUser" duration-ms="14940" started-at="2019-08-14T18:02:32Z" finished-at="2019-08-14T18:02:47Z">
+        <test-method status="PASS" signature="testRegisterUser()[pri:2, instance:com.AutomationPractice.testscripts.registrationpage.RegistrationPageTest@72b6cbcc]" name="testRegisterUser" duration-ms="21294" started-at="2019-08-14T21:28:59Z" finished-at="2019-08-14T21:29:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRegisterUser -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.AutomationPractice.testscripts.registrationpage.RegistrationPageTest@72b6cbcc]" name="afterMethod" is-config="true" duration-ms="29" started-at="2019-08-14T18:02:47Z" finished-at="2019-08-14T18:02:47Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.AutomationPractice.testscripts.registrationpage.RegistrationPageTest@72b6cbcc]" name="afterMethod" is-config="true" duration-ms="29" started-at="2019-08-14T21:29:20Z" finished-at="2019-08-14T21:29:20Z">
           <params>
             <param index="0">
               <value>
@@ -489,19 +489,27 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.AutomationPractice.testscripts.registrationpage.RegistrationPageTest@72b6cbcc]" name="afterTest" is-config="true" duration-ms="124" started-at="2019-08-14T18:02:47Z" finished-at="2019-08-14T18:02:47Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.AutomationPractice.testscripts.registrationpage.RegistrationPageTest@72b6cbcc]" name="afterTest" is-config="true" duration-ms="75" started-at="2019-08-14T21:29:20Z" finished-at="2019-08-14T21:29:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- com.AutomationPractice.testscripts.registrationpage.RegistrationPageTest -->
     </test> <!-- RegistrationPageTest -->
-    <test name="ProductCategoryPageTest" duration-ms="28809" started-at="2019-08-14T18:02:47Z" finished-at="2019-08-14T18:03:16Z">
+    <test name="ProductCategoryPageTest" duration-ms="28015" started-at="2019-08-14T21:29:20Z" finished-at="2019-08-14T21:29:48Z">
       <class name="com.AutomationPractice.testscripts.productcategorypage.ProductCategoryPageTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.AutomationPractice.testscripts.productcategorypage.ProductCategoryPageTest@6c49835d]" name="beforeTest" is-config="true" duration-ms="738" started-at="2019-08-14T18:02:47Z" finished-at="2019-08-14T18:02:48Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.AutomationPractice.testscripts.productcategorypage.ProductCategoryPageTest@6c49835d]" name="beforeTest" is-config="true" duration-ms="646" started-at="2019-08-14T21:29:20Z" finished-at="2019-08-14T21:29:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.AutomationPractice.testscripts.productcategorypage.ProductCategoryPageTest@6c49835d]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-08-14T18:02:48Z" finished-at="2019-08-14T18:02:48Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.AutomationPractice.testscripts.productcategorypage.ProductCategoryPageTest@6c49835d]" name="beforeClass" is-config="true" duration-ms="1" started-at="2019-08-14T21:29:21Z" finished-at="2019-08-14T21:29:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="verifyProductPageTitleTest()[pri:1, instance:com.AutomationPractice.testscripts.productcategorypage.ProductCategoryPageTest@6c49835d]" name="verifyProductPageTitleTest" duration-ms="11459" started-at="2019-08-14T21:29:21Z" finished-at="2019-08-14T21:29:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductPageTitleTest -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.AutomationPractice.testscripts.productcategorypage.ProductCategoryPageTest@6c49835d]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-08-14T21:29:21Z" finished-at="2019-08-14T21:29:21Z">
           <params>
             <param index="0">
               <value>
@@ -512,15 +520,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="verifyProductPageTitleTest()[pri:1, instance:com.AutomationPractice.testscripts.productcategorypage.ProductCategoryPageTest@6c49835d]" name="verifyProductPageTitleTest" duration-ms="11782" started-at="2019-08-14T18:02:48Z" finished-at="2019-08-14T18:02:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyProductPageTitleTest -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.AutomationPractice.testscripts.productcategorypage.ProductCategoryPageTest@6c49835d]" name="beforeClass" is-config="true" duration-ms="0" started-at="2019-08-14T18:02:48Z" finished-at="2019-08-14T18:02:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.AutomationPractice.testscripts.productcategorypage.ProductCategoryPageTest@6c49835d]" name="afterMethod" is-config="true" duration-ms="27" started-at="2019-08-14T18:02:59Z" finished-at="2019-08-14T18:02:59Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.AutomationPractice.testscripts.productcategorypage.ProductCategoryPageTest@6c49835d]" name="afterMethod" is-config="true" duration-ms="24" started-at="2019-08-14T21:29:32Z" finished-at="2019-08-14T21:29:32Z">
           <params>
             <param index="0">
               <value>
@@ -531,11 +531,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="addItemsToCartTest()[pri:2, instance:com.AutomationPractice.testscripts.productcategorypage.ProductCategoryPageTest@6c49835d]" name="addItemsToCartTest" duration-ms="6603" started-at="2019-08-14T18:02:59Z" finished-at="2019-08-14T18:03:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addItemsToCartTest -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.AutomationPractice.testscripts.productcategorypage.ProductCategoryPageTest@6c49835d]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-08-14T18:02:59Z" finished-at="2019-08-14T18:02:59Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.AutomationPractice.testscripts.productcategorypage.ProductCategoryPageTest@6c49835d]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-08-14T21:29:32Z" finished-at="2019-08-14T21:29:32Z">
           <params>
             <param index="0">
               <value>
@@ -546,7 +542,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.AutomationPractice.testscripts.productcategorypage.ProductCategoryPageTest@6c49835d]" name="afterMethod" is-config="true" duration-ms="26" started-at="2019-08-14T18:03:06Z" finished-at="2019-08-14T18:03:06Z">
+        <test-method status="PASS" signature="addItemsToCartTest()[pri:2, instance:com.AutomationPractice.testscripts.productcategorypage.ProductCategoryPageTest@6c49835d]" name="addItemsToCartTest" duration-ms="6617" started-at="2019-08-14T21:29:32Z" finished-at="2019-08-14T21:29:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addItemsToCartTest -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.AutomationPractice.testscripts.productcategorypage.ProductCategoryPageTest@6c49835d]" name="afterMethod" is-config="true" duration-ms="23" started-at="2019-08-14T21:29:39Z" finished-at="2019-08-14T21:29:39Z">
           <params>
             <param index="0">
               <value>
@@ -557,11 +557,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="testProductsHaveBeenAddedToCart()[pri:3, instance:com.AutomationPractice.testscripts.productcategorypage.ProductCategoryPageTest@6c49835d]" name="testProductsHaveBeenAddedToCart" duration-ms="9512" started-at="2019-08-14T18:03:06Z" finished-at="2019-08-14T18:03:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testProductsHaveBeenAddedToCart -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.AutomationPractice.testscripts.productcategorypage.ProductCategoryPageTest@6c49835d]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-08-14T18:03:06Z" finished-at="2019-08-14T18:03:06Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.AutomationPractice.testscripts.productcategorypage.ProductCategoryPageTest@6c49835d]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2019-08-14T21:29:39Z" finished-at="2019-08-14T21:29:39Z">
           <params>
             <param index="0">
               <value>
@@ -572,7 +568,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.AutomationPractice.testscripts.productcategorypage.ProductCategoryPageTest@6c49835d]" name="afterMethod" is-config="true" duration-ms="48" started-at="2019-08-14T18:03:16Z" finished-at="2019-08-14T18:03:16Z">
+        <test-method status="PASS" signature="testProductsHaveBeenAddedToCart()[pri:3, instance:com.AutomationPractice.testscripts.productcategorypage.ProductCategoryPageTest@6c49835d]" name="testProductsHaveBeenAddedToCart" duration-ms="9142" started-at="2019-08-14T21:29:39Z" finished-at="2019-08-14T21:29:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testProductsHaveBeenAddedToCart -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.AutomationPractice.testscripts.productcategorypage.ProductCategoryPageTest@6c49835d]" name="afterMethod" is-config="true" duration-ms="29" started-at="2019-08-14T21:29:48Z" finished-at="2019-08-14T21:29:48Z">
           <params>
             <param index="0">
               <value>
@@ -583,27 +583,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.AutomationPractice.testscripts.productcategorypage.ProductCategoryPageTest@6c49835d]" name="afterTest" is-config="true" duration-ms="70" started-at="2019-08-14T18:03:16Z" finished-at="2019-08-14T18:03:16Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.AutomationPractice.testscripts.productcategorypage.ProductCategoryPageTest@6c49835d]" name="afterTest" is-config="true" duration-ms="71" started-at="2019-08-14T21:29:48Z" finished-at="2019-08-14T21:29:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- com.AutomationPractice.testscripts.productcategorypage.ProductCategoryPageTest -->
     </test> <!-- ProductCategoryPageTest -->
-    <test name="ShoppingCartSummaryPageTest" duration-ms="52453" started-at="2019-08-14T18:03:16Z" finished-at="2019-08-14T18:04:08Z">
+    <test name="ShoppingCartSummaryPageTest" duration-ms="58300" started-at="2019-08-14T21:29:48Z" finished-at="2019-08-14T21:30:47Z">
       <class name="com.AutomationPractice.testscripts.shoppingcartpage.ShoppingCartSummaryPageTest">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.AutomationPractice.testscripts.shoppingcartpage.ShoppingCartSummaryPageTest@76707e36]" name="beforeSuite" is-config="true" duration-ms="132" started-at="2019-08-14T18:00:42Z" finished-at="2019-08-14T18:00:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.AutomationPractice.testscripts.shoppingcartpage.ShoppingCartSummaryPageTest@76707e36]" name="beforeTest" is-config="true" duration-ms="624" started-at="2019-08-14T18:03:16Z" finished-at="2019-08-14T18:03:16Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.AutomationPractice.testscripts.shoppingcartpage.ShoppingCartSummaryPageTest@76707e36]" name="beforeTest" is-config="true" duration-ms="675" started-at="2019-08-14T21:29:48Z" finished-at="2019-08-14T21:29:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.AutomationPractice.testscripts.shoppingcartpage.ShoppingCartSummaryPageTest@76707e36]" name="beforeClass" is-config="true" duration-ms="1" started-at="2019-08-14T18:03:16Z" finished-at="2019-08-14T18:03:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.AutomationPractice.testscripts.shoppingcartpage.ShoppingCartSummaryPageTest@76707e36]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-08-14T18:03:16Z" finished-at="2019-08-14T18:03:16Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.AutomationPractice.testscripts.shoppingcartpage.ShoppingCartSummaryPageTest@76707e36]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2019-08-14T21:29:49Z" finished-at="2019-08-14T21:29:49Z">
           <params>
             <param index="0">
               <value>
@@ -614,11 +606,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="verifyShoppingCartSummaryPageTitle()[pri:1, instance:com.AutomationPractice.testscripts.shoppingcartpage.ShoppingCartSummaryPageTest@76707e36]" name="verifyShoppingCartSummaryPageTitle" duration-ms="14903" started-at="2019-08-14T18:03:16Z" finished-at="2019-08-14T18:03:31Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.AutomationPractice.testscripts.shoppingcartpage.ShoppingCartSummaryPageTest@76707e36]" name="beforeClass" is-config="true" duration-ms="0" started-at="2019-08-14T21:29:49Z" finished-at="2019-08-14T21:29:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="verifyShoppingCartSummaryPageTitle()[pri:1, instance:com.AutomationPractice.testscripts.shoppingcartpage.ShoppingCartSummaryPageTest@76707e36]" name="verifyShoppingCartSummaryPageTitle" duration-ms="16271" started-at="2019-08-14T21:29:49Z" finished-at="2019-08-14T21:30:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyShoppingCartSummaryPageTitle -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.AutomationPractice.testscripts.shoppingcartpage.ShoppingCartSummaryPageTest@76707e36]" name="afterMethod" is-config="true" duration-ms="38" started-at="2019-08-14T18:03:31Z" finished-at="2019-08-14T18:03:31Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.AutomationPractice.testscripts.shoppingcartpage.ShoppingCartSummaryPageTest@76707e36]" name="afterMethod" is-config="true" duration-ms="25" started-at="2019-08-14T21:30:05Z" finished-at="2019-08-14T21:30:05Z">
           <params>
             <param index="0">
               <value>
@@ -629,11 +625,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="testLoginToShoppingCartSummary()[pri:2, instance:com.AutomationPractice.testscripts.shoppingcartpage.ShoppingCartSummaryPageTest@76707e36]" name="testLoginToShoppingCartSummary" duration-ms="11158" started-at="2019-08-14T18:03:31Z" finished-at="2019-08-14T18:03:42Z">
+        <test-method status="PASS" signature="testLoginToShoppingCartSummary()[pri:2, instance:com.AutomationPractice.testscripts.shoppingcartpage.ShoppingCartSummaryPageTest@76707e36]" name="testLoginToShoppingCartSummary" duration-ms="11141" started-at="2019-08-14T21:30:05Z" finished-at="2019-08-14T21:30:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginToShoppingCartSummary -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.AutomationPractice.testscripts.shoppingcartpage.ShoppingCartSummaryPageTest@76707e36]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-08-14T18:03:31Z" finished-at="2019-08-14T18:03:31Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.AutomationPractice.testscripts.shoppingcartpage.ShoppingCartSummaryPageTest@76707e36]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-08-14T21:30:05Z" finished-at="2019-08-14T21:30:05Z">
           <params>
             <param index="0">
               <value>
@@ -644,7 +640,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.AutomationPractice.testscripts.shoppingcartpage.ShoppingCartSummaryPageTest@76707e36]" name="afterMethod" is-config="true" duration-ms="31" started-at="2019-08-14T18:03:42Z" finished-at="2019-08-14T18:03:43Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.AutomationPractice.testscripts.shoppingcartpage.ShoppingCartSummaryPageTest@76707e36]" name="afterMethod" is-config="true" duration-ms="47" started-at="2019-08-14T21:30:16Z" finished-at="2019-08-14T21:30:16Z">
           <params>
             <param index="0">
               <value>
@@ -655,7 +651,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.AutomationPractice.testscripts.shoppingcartpage.ShoppingCartSummaryPageTest@76707e36]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-08-14T18:03:43Z" finished-at="2019-08-14T18:03:43Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.AutomationPractice.testscripts.shoppingcartpage.ShoppingCartSummaryPageTest@76707e36]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-08-14T21:30:16Z" finished-at="2019-08-14T21:30:16Z">
           <params>
             <param index="0">
               <value>
@@ -666,11 +662,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testCheckout()[pri:3, instance:com.AutomationPractice.testscripts.shoppingcartpage.ShoppingCartSummaryPageTest@76707e36]" name="testCheckout" duration-ms="25594" started-at="2019-08-14T18:03:43Z" finished-at="2019-08-14T18:04:08Z">
+        <test-method status="PASS" signature="testCheckout()[pri:3, instance:com.AutomationPractice.testscripts.shoppingcartpage.ShoppingCartSummaryPageTest@76707e36]" name="testCheckout" duration-ms="30029" started-at="2019-08-14T21:30:16Z" finished-at="2019-08-14T21:30:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCheckout -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.AutomationPractice.testscripts.shoppingcartpage.ShoppingCartSummaryPageTest@76707e36]" name="afterMethod" is-config="true" duration-ms="26" started-at="2019-08-14T18:04:08Z" finished-at="2019-08-14T18:04:08Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.AutomationPractice.testscripts.shoppingcartpage.ShoppingCartSummaryPageTest@76707e36]" name="afterMethod" is-config="true" duration-ms="34" started-at="2019-08-14T21:30:46Z" finished-at="2019-08-14T21:30:46Z">
           <params>
             <param index="0">
               <value>
@@ -681,11 +677,83 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.AutomationPractice.testscripts.shoppingcartpage.ShoppingCartSummaryPageTest@76707e36]" name="afterTest" is-config="true" duration-ms="73" started-at="2019-08-14T18:04:08Z" finished-at="2019-08-14T18:04:08Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.AutomationPractice.testscripts.shoppingcartpage.ShoppingCartSummaryPageTest@76707e36]" name="afterTest" is-config="true" duration-ms="70" started-at="2019-08-14T21:30:46Z" finished-at="2019-08-14T21:30:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- com.AutomationPractice.testscripts.shoppingcartpage.ShoppingCartSummaryPageTest -->
     </test> <!-- ShoppingCartSummaryPageTest -->
+    <test name="SearchPageTest" duration-ms="15694" started-at="2019-08-14T21:30:47Z" finished-at="2019-08-14T21:31:02Z">
+      <class name="com.AutomationPractice.testscripts.searchpage.SearchPageTest">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.AutomationPractice.testscripts.searchpage.SearchPageTest@711f39f9]" name="beforeSuite" is-config="true" duration-ms="134" started-at="2019-08-14T21:26:51Z" finished-at="2019-08-14T21:26:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.AutomationPractice.testscripts.searchpage.SearchPageTest@711f39f9]" name="beforeTest" is-config="true" duration-ms="659" started-at="2019-08-14T21:30:47Z" finished-at="2019-08-14T21:30:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.AutomationPractice.testscripts.searchpage.SearchPageTest@711f39f9]" name="beforeClass" is-config="true" duration-ms="1" started-at="2019-08-14T21:30:47Z" finished-at="2019-08-14T21:30:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.AutomationPractice.testscripts.searchpage.SearchPageTest@711f39f9]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2019-08-14T21:30:47Z" finished-at="2019-08-14T21:30:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.AutomationPractice.testscripts.searchpage.SearchPageTest.verifyProductPageTitleTest()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="verifyProductPageTitleTest()[pri:1, instance:com.AutomationPractice.testscripts.searchpage.SearchPageTest@711f39f9]" name="verifyProductPageTitleTest" duration-ms="8886" started-at="2019-08-14T21:30:47Z" finished-at="2019-08-14T21:30:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductPageTitleTest -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.AutomationPractice.testscripts.searchpage.SearchPageTest@711f39f9]" name="afterMethod" is-config="true" duration-ms="35" started-at="2019-08-14T21:30:56Z" finished-at="2019-08-14T21:30:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyProductPageTitleTest status=SUCCESS method=SearchPageTest.verifyProductPageTitleTest()[pri:1, instance:com.AutomationPractice.testscripts.searchpage.SearchPageTest@711f39f9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="testEnterSearchTextAndClickEnter()[pri:2, instance:com.AutomationPractice.testscripts.searchpage.SearchPageTest@711f39f9]" name="testEnterSearchTextAndClickEnter" duration-ms="6008" started-at="2019-08-14T21:30:56Z" finished-at="2019-08-14T21:31:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEnterSearchTextAndClickEnter -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.AutomationPractice.testscripts.searchpage.SearchPageTest@711f39f9]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-08-14T21:30:56Z" finished-at="2019-08-14T21:30:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.AutomationPractice.testscripts.searchpage.SearchPageTest.testEnterSearchTextAndClickEnter()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.AutomationPractice.testscripts.searchpage.SearchPageTest@711f39f9]" name="afterMethod" is-config="true" duration-ms="26" started-at="2019-08-14T21:31:02Z" finished-at="2019-08-14T21:31:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testEnterSearchTextAndClickEnter status=SUCCESS method=SearchPageTest.testEnterSearchTextAndClickEnter()[pri:2, instance:com.AutomationPractice.testscripts.searchpage.SearchPageTest@711f39f9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.AutomationPractice.testscripts.searchpage.SearchPageTest@711f39f9]" name="afterTest" is-config="true" duration-ms="78" started-at="2019-08-14T21:31:02Z" finished-at="2019-08-14T21:31:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.AutomationPractice.testscripts.searchpage.SearchPageTest -->
+    </test> <!-- SearchPageTest -->
   </suite> <!-- All Test -->
 </testng-results>
