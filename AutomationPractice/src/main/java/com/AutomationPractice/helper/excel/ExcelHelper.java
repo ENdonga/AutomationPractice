@@ -6,8 +6,10 @@ import java.io.FileOutputStream;
 import java.util.Iterator;
 
 import org.apache.log4j.Logger;
+import org.apache.poi.hssf.record.chart.DatRecord;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -18,7 +20,6 @@ import com.AutomationPractice.helper.logger.LoggerHelper;
 public class ExcelHelper {
 	private Logger log = LoggerHelper.getLogger(ExcelHelper.class);
 
-	
 	public static Object[][] getExcelData(String excelLocation, String sheetName) {
 		try {
 			Object dataSets[][] = null;
@@ -27,38 +28,30 @@ public class ExcelHelper {
 			XSSFWorkbook workbook = new XSSFWorkbook(file);
 			// Get sheet name from workbook
 			XSSFSheet sheet = workbook.getSheet(sheetName);
+
 			// Get active rows in excel sheet
-			int rowCount = sheet.getLastRowNum();
+			int rowCount = sheet.getPhysicalNumberOfRows();
 			// Get active columns in the row
-			int columnCount = sheet.getRow(0).getLastCellNum();
-			dataSets = new Object[rowCount + 1][columnCount];
+			int columnCount = sheet.getRow(0).getPhysicalNumberOfCells();
+			dataSets = new Object[rowCount - 1][columnCount];
 			// Iterate through each row in the sheet
-			Iterator<Row> rowIterator = sheet.iterator();
-			int i = 0;
-			while (rowIterator.hasNext()) {
-				i++;
-				// For each row, iterate through each column
-				Row row = (Row) rowIterator.next();
-				if(row.getRowNum()==0) {
-					continue;
-				}
-				Iterator<Cell> cellIterator = row.cellIterator();
-				int j = 0;
-				while (cellIterator.hasNext()) {
-					j++;
-					Cell cell = (Cell) cellIterator.next();
+			for (int i = 1; i < rowCount; i++) {
+				XSSFRow row = sheet.getRow(i);
+				// Iterate through each column in the sheet
+				for (int j = 0; j < columnCount; j++) {
+					XSSFCell cell = row.getCell(j);
 					switch (cell.getCellType()) {
 					case STRING:
-						dataSets[i - 1][j - 1] = cell.getStringCellValue();
+						dataSets[i - 1][j] = cell.getStringCellValue();
 						break;
 					case NUMERIC:
-						dataSets[i - 1][j - 1] = cell.getNumericCellValue();
+						dataSets[i - 1][j] = cell.getNumericCellValue();
 						break;
 					case BOOLEAN:
-						dataSets[i - 1][j - 1] = cell.getBooleanCellValue();
+						dataSets[i - 1][j] = cell.getBooleanCellValue();
 						break;
 					case FORMULA:
-						dataSets[i - 1][j - 1] = cell.getCellFormula();
+						dataSets[i - 1][j] = cell.getCellFormula();
 						break;
 					default:
 						System.out.println("No matching ENUM type found");
@@ -67,6 +60,42 @@ public class ExcelHelper {
 				}
 			}
 			return dataSets;
+
+//			Iterator<Row> rowIterator = sheet.iterator();
+//			//rowIterator.next();
+//			int i = 0;
+//			while (rowIterator.hasNext()) {
+//				i++;
+//				// For each row, iterate through each column
+//				Row row = (Row) rowIterator.next();
+////				if(row.getRowNum()==0) {
+////					continue;
+////				}
+//				Iterator<Cell> cellIterator = row.cellIterator();
+//				int j = 0;
+//				while (cellIterator.hasNext()) {
+//					j++;
+//					Cell cell = (Cell) cellIterator.next();
+//					switch (cell.getCellType()) {
+//					case STRING:
+//						dataSets[i-1][j-1] = cell.getStringCellValue();
+//						break;
+//					case NUMERIC:
+//						dataSets[i-1][j-1] = cell.getNumericCellValue();
+//						break;
+//					case BOOLEAN:
+//						dataSets[i-1][j-1] = cell.getBooleanCellValue();
+//						break;
+//					case FORMULA:
+//						dataSets[i-1][j-1] = cell.getCellFormula();
+//						break;
+//					default:
+//						System.out.println("No matching ENUM type found");
+//						break;
+//					}
+//				}
+//			}
+//			return dataSets;
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -102,6 +131,4 @@ public class ExcelHelper {
 			// TODO: handle exception
 		}
 	}
-
-
 }
