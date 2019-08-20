@@ -12,6 +12,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.AutomationPractice.helper.assertion.VerificationHelper;
 import com.AutomationPractice.helper.browserconfiguratiion.config.ObjectReader;
+import com.AutomationPractice.helper.javascript.JavaScriptHelper;
 import com.AutomationPractice.helper.logger.LoggerHelper;
 import com.AutomationPractice.helper.select.DropDownHelper;
 import com.AutomationPractice.helper.wait.WaitHelper;
@@ -339,7 +340,7 @@ public class RegistrationPage {
 		return new VerificationHelper(driver).isDisplayed(yourPersonalInformation);
 	}
 	
-	public void registerUserWithTestData(String firstname, String lastname, String password, String address1, String city, String zipcode, String country, String phone) {
+	public void registerUserWithTestData(String firstname, String lastname, String password, String address1, String city, double zipcode, String country, double phone) {
 		clearTextFieldBeforeTyping(customerFirstName);
 		log.info("Entering email address ..... " + firstname);
 		TestBase.logExtentReport("Entering email address..... " + firstname);
@@ -360,16 +361,19 @@ public class RegistrationPage {
 		yourAddressCity.sendKeys(city);
 		log.info("Entered city name as: " + city);
 		TestBase.logExtentReport("Entered city name as: " + city);
+		new JavaScriptHelper(driver).scrollToElement(yourAddressPostalCode);
+		// Cast zipCode from double to an integer and pass the new integer value
+		int zip = (int) zipcode;
 		clearTextFieldBeforeTyping(yourAddressPostalCode);
-		yourAddressPostalCode.sendKeys(zipcode);
-		log.info("Entered zip/postal code: " + zipcode);
-		TestBase.logExtentReport("Entered zip/postal code: " + zipcode);
+		yourAddressPostalCode.sendKeys(String.valueOf(zip));
+		log.info("Entered zip/postal code: " + zip);
+		TestBase.logExtentReport("Entered zip/postal code: " + zip);
 		new DropDownHelper(driver).selectUsingVisibleText(yourAddressCountry, country);
 		String selectedCountry = new DropDownHelper(driver).getSelectedOption(yourAddressCountry);
 		log.info("Selected country option as.... " + selectedCountry);
 		TestBase.logExtentReport("Selected country option as.... " + selectedCountry);
 		clearTextFieldBeforeTyping(mobilePhoneNumber);
-		mobilePhoneNumber.sendKeys(phone);
+		mobilePhoneNumber.sendKeys(String.valueOf(phone));
 		log.info("Entered mobile phone number: " + phone);
 		TestBase.logExtentReport("Entered mobile phone number: " + phone);
 		//registerButton.click();
