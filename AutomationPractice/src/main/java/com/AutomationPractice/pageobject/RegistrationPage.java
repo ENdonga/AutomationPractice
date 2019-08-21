@@ -340,7 +340,7 @@ public class RegistrationPage {
 		return new VerificationHelper(driver).isDisplayed(yourPersonalInformation);
 	}
 	
-	public void registerUserWithTestData(String firstname, String lastname, String password, String address1, String city, double zipcode, String country, double phone) {
+	public void registerUserWithTestData(String firstname, String lastname, String password, String address1, String city, double zipcode, String country, String phone) {
 		clearTextFieldBeforeTyping(customerFirstName);
 		log.info("Entering email address ..... " + firstname);
 		TestBase.logExtentReport("Entering email address..... " + firstname);
@@ -372,6 +372,7 @@ public class RegistrationPage {
 		String selectedCountry = new DropDownHelper(driver).getSelectedOption(yourAddressCountry);
 		log.info("Selected country option as.... " + selectedCountry);
 		TestBase.logExtentReport("Selected country option as.... " + selectedCountry);
+		// Convert phone number from double to integer
 		clearTextFieldBeforeTyping(mobilePhoneNumber);
 		mobilePhoneNumber.sendKeys(String.valueOf(phone));
 		log.info("Entered mobile phone number: " + phone);
@@ -379,30 +380,3 @@ public class RegistrationPage {
 		//registerButton.click();
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
