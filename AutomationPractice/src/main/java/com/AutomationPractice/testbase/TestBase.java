@@ -22,7 +22,9 @@ import com.AutomationPractice.helper.browserconfiguratiion.ChromeBrowser;
 import com.AutomationPractice.helper.browserconfiguratiion.FirefoxBrowser;
 import com.AutomationPractice.helper.browserconfiguratiion.config.ObjectReader;
 import com.AutomationPractice.helper.browserconfiguratiion.config.PropertyReader;
+import com.AutomationPractice.helper.excel.ExcelHelper;
 import com.AutomationPractice.helper.logger.LoggerHelper;
+import com.AutomationPractice.helper.resource.ResourceHelper;
 import com.AutomationPractice.helper.wait.WaitHelper;
 import com.AutomationPractice.utils.ExtentManager;
 import com.aventstack.extentreports.ExtentReports;
@@ -115,6 +117,15 @@ public class TestBase {
 	public void getApplicationUrl(String url) {
 		logExtentReport("Navigating to URL.... " + url);
 		driver.get(url);
+	}
+	
+	public Object[][] getExcelData(String excelName, String sheetName){
+		String excelLocation = ResourceHelper.getResourcePath("/src/main/resources/excel/") + excelName;
+		log.info("excel location is:....... " + excelLocation);
+		ExcelHelper excel = new ExcelHelper();
+		Object[][] data = excel.getExcelData(excelLocation, sheetName);
+		return data;
+		
 	}
 
 }
