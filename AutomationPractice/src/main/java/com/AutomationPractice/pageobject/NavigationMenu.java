@@ -79,5 +79,6 @@ public class NavigationMenu {
 		signOut.click();
 		log.info("Clicked on sign out.....");
 		TestBase.logExtentReport("Clicked on sign out.....");
+		waitHelper.waitForElement(signInLink, ObjectReader.reader.getExplicitWait());
 	}
 }
