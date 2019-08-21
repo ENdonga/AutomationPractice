@@ -71,7 +71,7 @@ public class RegistrationPageTest extends TestBase {
 	 */
 	
 	@Test(dataProvider = "getRegistrationData")
-	public void registerUsersFromDataFile(String firstname, String lastname, String password, String address1, String city, double zipcode, String country, double phone) {
+	public void registerUsersFromDataFile(String firstname, String lastname, String password, String address1, String city, double zipcode, String country, String phone) {
 		// Navigate to URL
 		getApplicationUrl(ObjectReader.reader.getUrl());
 		navigationMenu = new NavigationMenu(driver);
