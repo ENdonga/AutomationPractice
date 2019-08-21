@@ -3,17 +3,12 @@ package com.AutomationPractice.helper.excel;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
-import java.util.Iterator;
 
 import org.apache.log4j.Logger;
-import org.apache.poi.hssf.record.chart.DatRecord;
-import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import org.testng.annotations.DataProvider;
 
 import com.AutomationPractice.helper.logger.LoggerHelper;
 
@@ -59,43 +54,10 @@ public class ExcelHelper {
 					}
 				}
 			}
+			workbook.close();
 			return dataSets;
+			
 
-//			Iterator<Row> rowIterator = sheet.iterator();
-//			//rowIterator.next();
-//			int i = 0;
-//			while (rowIterator.hasNext()) {
-//				i++;
-//				// For each row, iterate through each column
-//				Row row = (Row) rowIterator.next();
-////				if(row.getRowNum()==0) {
-////					continue;
-////				}
-//				Iterator<Cell> cellIterator = row.cellIterator();
-//				int j = 0;
-//				while (cellIterator.hasNext()) {
-//					j++;
-//					Cell cell = (Cell) cellIterator.next();
-//					switch (cell.getCellType()) {
-//					case STRING:
-//						dataSets[i-1][j-1] = cell.getStringCellValue();
-//						break;
-//					case NUMERIC:
-//						dataSets[i-1][j-1] = cell.getNumericCellValue();
-//						break;
-//					case BOOLEAN:
-//						dataSets[i-1][j-1] = cell.getBooleanCellValue();
-//						break;
-//					case FORMULA:
-//						dataSets[i-1][j-1] = cell.getCellFormula();
-//						break;
-//					default:
-//						System.out.println("No matching ENUM type found");
-//						break;
-//					}
-//				}
-//			}
-//			return dataSets;
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -126,6 +88,7 @@ public class ExcelHelper {
 					break;
 				}
 			}
+			workbook.close();
 
 		} catch (Exception e) {
 			// TODO: handle exception
