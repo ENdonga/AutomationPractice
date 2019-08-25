@@ -57,11 +57,12 @@ public class TestBase {
 
 	@BeforeMethod
 	public void beforeMethod(Method method) {
-		test.log(Status.INFO, method.getName() + " test started.");
+		test.log(Status.INFO, method.getName()+" **************test started***************");
+		log.info("**************"+method.getName()+" Started***************");
 	}
 
 	@AfterMethod
-	public void afterMethod(ITestResult result) throws IOException {
+	public void afterMethod(ITestResult result, Method method) throws IOException {
 		if (result.getStatus() == ITestResult.FAILURE) {
 			test.log(Status.FAIL, result.getThrowable());
 		} else if (result.getStatus() == ITestResult.SUCCESS) {
@@ -69,6 +70,8 @@ public class TestBase {
 		} else if (result.getStatus() == ITestResult.SKIP) {
 			test.log(Status.SKIP, result.getThrowable());
 		}
+		log.info("**************"+result.getName()+" Finished***************");
+		test.log(Status.INFO, method.getName()+" ************** Test Finished***************");
 		extent.flush();
 	}
 
