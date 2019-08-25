@@ -26,8 +26,8 @@ public class SearchPageTest extends TestBase{
 		String title = searchPage.getPageTitle();
 		String actual = new VerificationHelper(driver).getTitle();
 		AssertionHelper.verifyText(actual, title);
-		log.info("Test completed....... ");
-		TestBase.logExtentReport("Test completed....... ");
+//		log.info("Test completed....... ");
+//		TestBase.logExtentReport("Test completed....... ");
 	}
 	
 	@Test(priority = 2)
@@ -36,8 +36,8 @@ public class SearchPageTest extends TestBase{
 		searchPage = new SearchPage(driver);
 		searchPage.enterTextInSearchAndClickEnter(ApplicationText.dress);
 		AssertionHelper.verifyText(new VerificationHelper(driver).getElementText(searchPage.searchText), searchPage.getSearchedText());
-		log.info("Test completed successfully.......");
-		TestBase.logExtentReport("Test completed successfully.......");
+//		log.info("Test completed successfully.......");
+//		TestBase.logExtentReport("Test completed successfully.......");
 	}
 
 }
