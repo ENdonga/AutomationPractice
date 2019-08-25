@@ -63,24 +63,24 @@ public class ProductCategoryPage {
 	}
 
 	public void mouseOverOnProduct(int number) {
-		Actions action = new Actions(driver);
+		// Get the xpath for the product card i.e one with the image
 		int num = number + 1;
 		String firstPart = "//*[@id='center_column']/ul/li[";
-		String secondPart = "]/div/div[2]/div[2]/a[1]/span";
-		String fullXpath = firstPart + number + secondPart;
+		String secondPart = "]/div/div[1]/div";
+		String fullXpath = firstPart + num + secondPart;
 		WebElement addProductToCart = driver.findElement(By.xpath(fullXpath));
-		log.info("Doing mouse over product number: " + num);
-		TestBase.logExtentReport("Doing mouse over product number: " + num);
+		log.info("Doing mouse over on product number: " + num);
+		TestBase.logExtentReport("Doing mouse over on product number: " + num);
 		new JavaScriptHelper(driver).scrollToElement(addProductToCart);
-		action.moveToElement(totalProducts.get(number)).build().perform();
-//		action.moveToElement(addProductToCart).build().perform();
-		WebElement addToCartBtn = driver.findElement(By.xpath("//*[@id='center_column']/ul/li[" + number + "]/div/div[2]/div[2]/a[1]"));
-		addProductToCart.click();
+		Actions action = new Actions(driver);
+		action.moveToElement(addProductToCart).build().perform();
+		// After hover on product card locate the xpath for the add to cart button
+		String path = "//*[@id='center_column']/ul/li["+ num +"]/div/div[2]/div[2]/a[1]/span";
+		WebElement addToCartBtn = driver.findElement(By.xpath(path));
+		addToCartBtn.click();
 	}
 
 	public void clickOnAddToCart() {
-		// addToCart.click();
-//		int number = selectRandomProduct();
 		mouseOverOnProduct(selectRandomProduct());
 		log.info("Clicked add to cart button... ");
 		TestBase.logExtentReport("Clicked add to cart button... ");
