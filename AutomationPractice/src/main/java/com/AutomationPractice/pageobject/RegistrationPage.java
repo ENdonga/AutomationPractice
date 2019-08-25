@@ -361,7 +361,7 @@ public class RegistrationPage {
 		yourAddressCity.sendKeys(city);
 		log.info("Entered city name as: " + city);
 		TestBase.logExtentReport("Entered city name as: " + city);
-		new JavaScriptHelper(driver).scrollToElement(yourAddressPostalCode);
+		new JavaScriptHelper(driver).scrollToElement(yourAddressPostalCode);	
 		// Cast zipCode from double to an integer and pass the new integer value
 		int zip = (int) zipcode;
 		clearTextFieldBeforeTyping(yourAddressPostalCode);
