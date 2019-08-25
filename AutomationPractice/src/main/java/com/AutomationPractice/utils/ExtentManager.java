@@ -11,7 +11,7 @@ public class ExtentManager {
 
 	public static ExtentReports getInstance() {
 		if (extent == null) {
-			return createInstance("test-output/extent.html");
+			return createInstance(System.getProperty("user.dir") + "/src/main/resources/reports/extent.html");
 		} else {
 			return extent;
 		}
